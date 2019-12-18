@@ -1,20 +1,21 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
+import styled from 'styled-components';
 
 function Footer() {
     return (
-        <div className="main-footer">
-            <Container>
+        <FooterContainer>
+            <Container fluid className="main-footer">
                 <Row>
                     <Col md={3} sm={6}>
                     {/* Col 1 */}
                     <h4>Lorem Limposum</h4>
                     <ul className="list-unstyled">
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li> 
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
                     </ul>
                         
                     </Col>
@@ -23,11 +24,11 @@ function Footer() {
                     {/* Col 2 */}
                     <h4>Lorem Limposum</h4>
                     <ul className="list-unstyled">
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
+                        <li><a href="/"> Lorem Limposum </a></li>
+                        <li><a href="/"> Lorem Limposum </a></li>
+                        <li><a href="/"> Lorem Limposum </a></li>
+                        <li><a href="/"> Lorem Limposum </a></li>
+                        <li><a href="/"> Lorem Limposum </a></li>
                     </ul>
                         
                     </Col>
@@ -36,11 +37,11 @@ function Footer() {
                     {/* Col 3 */}
                     <h4>Lorem Limposum</h4>
                     <ul className="list-unstyled">
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
+                        <li><a href="/"> Lorem Limposum </a></li>
+                        <li><a href="/"> Lorem Limposum </a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
                     </ul>
                     </Col>
 
@@ -48,11 +49,11 @@ function Footer() {
                     {/* Col 1 */}
                     <h4>Lorem Limposum</h4>
                     <ul className="list-unstyled">
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
-                        <li>Lorem Limposum</li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
+                        <li><a href="/"> Lorem Limposum</a></li>
                     </ul>
                     </Col>
                 </Row>
@@ -60,8 +61,20 @@ function Footer() {
                     &copy; Copyright {new Date().getFullYear()}. All right reserved
                 </p>
             </Container>
-        </div>
+        </FooterContainer>
     )
 }
 
 export default Footer;
+
+const FooterContainer = styled.footer `
+    .main-footer {
+        background : var(--mainDark);
+        color: var(--mainText);
+    }
+
+    ul li a{
+        text-decoration: none;
+        color: var(--mainText);
+    }
+`;
