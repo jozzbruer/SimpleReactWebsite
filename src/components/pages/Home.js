@@ -2,23 +2,23 @@ import React, { Component } from 'react'
 import { InfoConsumer } from '../context'
 import { Container, Row, Col } from 'react-bootstrap'
 import Info from '../Info'
+import '../../App.css'
 
 
 class Home extends Component {
     render() {
         return (
-            <Container>
-                <Row>
-                    <Col lg={6}>
-                        <InfoConsumer>
+            <Container  >
+                <Row className="row mt-5">
+                        <InfoConsumer className="card-style">
                             {data => {
                                 return data.info.map(item =>{
                                     return <Info key={item.id} item={item} />;
                                 })
                             }}
                         </InfoConsumer>
-                    </Col>
                 </Row>
+                <br/>
             </Container>
         )
     }

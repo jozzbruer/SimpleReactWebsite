@@ -2,3 +2,8 @@
     --mainDark: #303840;
     --mainText: #FFF;
 }
+#test{
+  display: flex;
+  background-color: red;
+  width: 100%;
+}
