@@ -1,4 +1,11 @@
 #nav{
     background-color: #BF3044;
-    color:white;
 }
+
+#navbar{
+    color: aliceblue;
+    margin-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
