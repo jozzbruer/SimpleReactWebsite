@@ -18,9 +18,9 @@ class Details extends Component {
                     } = data.detailInfo;
 
                     return(
-                        <React.Fragment>
+                        <Container>
                             <h1>{headerTitle}</h1>
-                        </React.Fragment>
+                        </Container>
                     );
                 }}
             </InfoConsumer>
