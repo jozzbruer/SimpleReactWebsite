@@ -58,7 +58,9 @@ function Footer() {
                     </Col>
                 </Row>
                 <p className="text-xs-center">
-                    &copy; Copyright {new Date().getFullYear()}. All right reserved
+                <a href="https://www.linkedin.com/in/quince-joz-bruer-4a0488161/" target="_blank">Quince Joz-Bruer </a>
+                 &copy; Copyright {new Date().getFullYear()}. All right reserved <br />
+                    
                 </p>
             </Container>
         </FooterContainer>
@@ -71,6 +73,7 @@ const FooterContainer = styled.footer `
     .main-footer {
         background : var(--mainDark);
         color: var(--mainText);
+        min-height: 250px;
     }
 
     ul li a{

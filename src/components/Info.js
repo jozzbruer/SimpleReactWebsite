@@ -26,7 +26,7 @@ class Info extends Component {
                         <Card.Text>
                             {headerText}
                         </Card.Text>
-                            <Link to ='/details'>
+                            <Link onClick={()=>data.handleDetail(id)} to ='/details' >
                                 <Button variant="primary">MORE INFO</Button>
                             </Link>
                         </Card.Body>

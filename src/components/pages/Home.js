@@ -8,7 +8,7 @@ import '../../App.css'
 class Home extends Component {
     render() {
         return (
-            <Container  >
+            <Container >
                 <Row className="row mt-5">
                         <InfoConsumer className="card-style">
                             {data => {
